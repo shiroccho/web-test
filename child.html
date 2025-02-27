@@ -7,7 +7,7 @@
         <button id="btn_close">閉じる</button>
         <script>
             window.onload = function(){
-                history.pushState('','','/hoge');
+                history.replaceState('','','https://hoge.com/hoge');
             }
             const btn = document.getElementById('btn_close');
             btn.addEventListener('click',() => {
