@@ -58,7 +58,11 @@
     <p>改行テスト用</p>
     <p>改行テスト用</p>
     <p>改行テスト用</p>
-    <script>
+    <script type="text/javascript">
+      window.onload = function() {
+        var height = document.getElementsBytagName("html")[0].scrollHeight;
+        window.parent.postMessage(["setHeight", height], "*");
+      }
       document.getElementById("export").textContent = "Hello, World!";
     </script>
   </body>
